@@ -1,0 +1,66 @@
+footer {
+    z-index: 666;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navbar {
+        width: 82.5rem;
+        height: 5rem;
+        padding: 0.625rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+        background-color: $sidebar-color;
+        border-radius: 0.4375rem;
+        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo__footer {
+        img {
+            width: 2.8125rem;
+            border-radius: 0.4375rem;
+        }
+    }
+
+    .titulo__footer {
+        width: auto;
+        height: auto;
+
+        h2 {
+            color: $text-color;
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+
+    .redes__footer {
+
+        .facebook {
+            color: #0165E1;
+        }
+
+        .discord {
+            color: #7289DA;
+        }
+
+        a {
+            padding-top: 0.9375rem;
+            padding-bottom: 0.3125rem;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
+
+            &:hover {
+                border: 1px $secondary-color solid;
+                border-radius: 0.4375rem;
+                background-color: $primary-color;
+            }
+
+            i {
+                font-size: 1.875rem;
+                color: $text-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.home {
+    
+    /* ======= Contenido ======= */
+    .clase1 {
+        width: 100%;
+        margin-top: 2.8125rem;
+
+        .title__clase1 {
+            text-align: center;
+            margin-bottom: 2.5rem;
+
+            h2 {
+                color: $primary-color;
+                font-size: 2.75rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $text-color;
+            }
+        }
+
+        .contenido__clase1 {
+            text-align: center;
+
+            .img-cont__clase1 {
+                margin-bottom: 3.125rem;
+
+                img {
+                    border-radius: 0.4375rem;
+                    max-width: 100%;
+                    height: auto;
+                    width: 40.625rem;
+                }
+            }
+
+            .separadores {
+                color: $secondary-color;
+                margin-top: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .cont__clase1 {
+                margin-top: 2.8125rem;
+                margin-bottom: 2.8125rem;
+
+                h2 {
+                    text-align: left;
+                    font-size: 1.5625rem;
+                    color: $primary-color;
+                    margin-top: 1.875rem;
+                    color: $text-color;
+                }
+
+                .sub-titulos {
+                    font-size: 1.25rem;
+                    color: $text-color;
+                }
+
+                .parrafos {
+                    font-size: 1rem;
+                    text-align: left;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    color: $paragraphcolor;
+                }
+
+                pre {
+                    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            .lista {
+                text-align: left;
+                line-height: 1.875rem;
+                color: $paragraphcolor;
+            }
+        }
+
+        .botones__cambio {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 0.4375rem;
+
+            .boton__caja {
+                a {
+                    button {
+                        background-color: $sidebar-color;
+                        color: $text-color;
+                        border-style: none;
+                        border-radius: 0.4375rem;
+                        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                        border: 1px $secondary-color solid;
+                        font-size: 0.8125rem;
+
+                        &:hover {
+                            box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                            background-color: $primary-color;
+                            border: 1px $secondary-color2 solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    :not(pre)>code[class*=language-],
+    pre[class*=language-] {
+        background-color: $sidebar-color;
+    }
+}
