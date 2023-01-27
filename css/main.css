@@ -248,7 +248,7 @@ input:checked + label:after {
     margin-right: auto;
     margin-left: auto; }
     .home .titulo .contenedor__titulo .contenido__titulo {
-      margin-top: 3.125rem; }
+      margin-top: 2.5rem; }
       .home .titulo .contenedor__titulo .contenido__titulo h2 {
         font-weight: 700;
         font-size: 3.5rem;
@@ -318,8 +318,7 @@ input:checked + label:after {
         margin-top: 1.25rem;
         margin-bottom: 1.25rem; }
       .home .clase1 .contenido__clase1 .cont__clase1 {
-        margin-top: 2.8125rem;
-        margin-bottom: 2.8125rem; }
+        margin-top: 2.8125rem; }
         .home .clase1 .contenido__clase1 .cont__clase1 h2 {
           text-align: left;
           font-size: 1.5625rem;
@@ -456,6 +455,8 @@ footer {
     font-size: 2.25rem; }
   .home .clase1 .contenido__clase1 .cont__clase1 h2 {
     font-size: 1.5rem; }
+  body header .nav-pills {
+    display: none; }
   header .navigation {
     width: 22.8125rem; }
   footer .navigation2 {
