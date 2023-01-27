@@ -7,7 +7,6 @@
 
         .title__clase1 {
             text-align: center;
-            margin-bottom: 2.5rem;
 
             h2 {
                 color: $primary-color;
@@ -22,7 +21,7 @@
             text-align: center;
 
             .img-cont__clase1 {
-                margin-bottom: 3.125rem;
+                margin-bottom: 2rem;
 
                 img {
                     border-radius: 0.4375rem;
@@ -73,6 +72,19 @@
                 line-height: 1.875rem;
                 color: $paragraphcolor;
             }
+
+            .alerts {
+                text-align: left;
+                color: $toggle-color;
+                margin-top: 38px;
+                background-color: $secondary-color;
+                border-style: none;
+                cursor: pointer;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
         }
 
         .botones__cambio {
@@ -82,12 +94,13 @@
             align-items: center;
             justify-content: space-between;
             border-radius: 0.4375rem;
+            margin-top: 50px;
 
             .boton__caja {
                 a {
                     button {
                         background-color: $sidebar-color;
-                        color: $text-color;
+                        color: $toggle-color;
                         border-style: none;
                         border-radius: 0.4375rem;
                         box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
@@ -98,6 +111,36 @@
                             box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
                             background-color: $primary-color;
                             border: 1px $secondary-color2 solid;
+                        }
+                    }
+                }
+            }
+        }
+
+        .botones__download {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.4375rem;
+            margin-bottom: 30px;
+            margin-top: 10px;
+
+            .boton__caja {
+                a {
+                    button {
+                        background-color: $secondary-color;
+                        color: $toggle-color;
+                        border-style: none;
+                        border-radius: 0.4375rem;
+                        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                        font-size: 0.8125rem;
+
+                        &:hover {
+                            box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                            background-color: $secondary-color2;
+                            color: $text-color;
                         }
                     }
                 }

@@ -71,13 +71,15 @@ body {
     body header .logo__header img {
       width: 2.8125rem;
       border-radius: 0.4375rem; }
-    body header .titulo__footer {
-      width: auto;
-      height: auto; }
-      body header .titulo__footer h2 {
-        color: #ccc;
-        font-size: 1rem;
-        margin: 0; }
+    body header .nav-pills .nav-link {
+      color: #fff; }
+      body header .nav-pills .nav-link:hover {
+        color: #ccc; }
+    body header .nav-pills .nav-link.active, body header .nav-pills .show > .nav-link {
+      background-color: #26528c;
+      color: #fff; }
+      body header .nav-pills .nav-link.active:hover, body header .nav-pills .show > .nav-link:hover {
+        background-color: #17498a; }
     body header .redes__header .html {
       color: #f06529; }
     body header .redes__header .css {
@@ -102,7 +104,7 @@ body {
   position: absolute; }
 
 .label {
-  background-color: #18191a;
+  background-color: #26528c;
   border-radius: 7px;
   cursor: pointer;
   display: flex;
@@ -169,14 +171,47 @@ html[data-theme='dark'] .home .titulo .contenedor__titulo .contenido__titulo h2 
   color: #26528c; }
 
 html[data-theme='dark'] .home .tema .caja .card__caja .info__caja h2 {
-  color: #484849;
+  color: #242526;
   font-weight: bold; }
 
 html[data-theme='dark'] .home .tema .caja .card__caja .info__caja .boton__caja a button {
   background-color: #26528c;
-  border-style: none; }
+  border-style: none;
+  color: #fff; }
   html[data-theme='dark'] .home .tema .caja .card__caja .info__caja .boton__caja a button:hover {
-    background-color: #2f60a0; }
+    background-color: #17498a;
+    color: #ccc; }
+
+html[data-theme='dark'] .label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.5px;
+  height: 14px;
+  width: 14px;
+  transform: translateX(34px);
+  transition: transform 0.2s linear; }
+
+html[data-theme='dark'] .home .clase1 .botones__cambio .boton__caja a button {
+  background-color: #26528c;
+  color: #fff;
+  border-style: none;
+  border-radius: 0.4375rem;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  font-size: 0.8125rem; }
+  html[data-theme='dark'] .home .clase1 .botones__cambio .boton__caja a button:hover {
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    background-color: #17498a;
+    color: #ccc; }
+
+html[data-theme='dark'] body header .nav-pills .nav-link.active, html[data-theme='dark'] body header .nav-pills .show > .nav-link {
+  color: #fff; }
+
+html[data-theme='dark'] .home .tema .caja .card__caja .info__caja span {
+  background-color: red; }
+
+html[data-theme='dark'] body header .nav-pills .nav-link {
+  color: #242526; }
 
 html[data-theme='dark'] footer .navbar {
   background-color: #d6d6d6; }
@@ -190,7 +225,7 @@ input[type=checkbox] {
   visibility: hidden; }
 
 input:checked + label {
-  background-color: #18191a; }
+  background-color: #26528c; }
 
 input:checked + label:after {
   left: calc(100% - 5px);
@@ -251,6 +286,10 @@ input:checked + label:after {
             box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
             background-color: #3a3b3c;
             border: 1px #17498a solid; }
+        .home .tema .caja .card__caja .info__caja span {
+          color: #fff;
+          background-color: #26528c;
+          margin-bottom: 15px; }
 
 .home {
   /* ======= Contenido ======= */ }
@@ -258,8 +297,7 @@ input:checked + label:after {
     width: 100%;
     margin-top: 2.8125rem; }
     .home .clase1 .title__clase1 {
-      text-align: center;
-      margin-bottom: 2.5rem; }
+      text-align: center; }
       .home .clase1 .title__clase1 h2 {
         color: #3a3b3c;
         font-size: 2.75rem;
@@ -269,7 +307,7 @@ input:checked + label:after {
     .home .clase1 .contenido__clase1 {
       text-align: center; }
       .home .clase1 .contenido__clase1 .img-cont__clase1 {
-        margin-bottom: 3.125rem; }
+        margin-bottom: 2rem; }
         .home .clase1 .contenido__clase1 .img-cont__clase1 img {
           border-radius: 0.4375rem;
           max-width: 100%;
@@ -303,16 +341,26 @@ input:checked + label:after {
         text-align: left;
         line-height: 1.875rem;
         color: #9b9d9e; }
+      .home .clase1 .contenido__clase1 .alerts {
+        text-align: left;
+        color: #fff;
+        margin-top: 38px;
+        background-color: #26528c;
+        border-style: none;
+        cursor: pointer; }
+        .home .clase1 .contenido__clase1 .alerts i {
+          margin-right: 5px; }
     .home .clase1 .botones__cambio {
       width: 100%;
       height: auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-radius: 0.4375rem; }
+      border-radius: 0.4375rem;
+      margin-top: 50px; }
       .home .clase1 .botones__cambio .boton__caja a button {
         background-color: #242526;
-        color: #ccc;
+        color: #fff;
         border-style: none;
         border-radius: 0.4375rem;
         box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
@@ -322,6 +370,26 @@ input:checked + label:after {
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
           background-color: #3a3b3c;
           border: 1px #17498a solid; }
+    .home .clase1 .botones__download {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.4375rem;
+      margin-bottom: 30px;
+      margin-top: 10px; }
+      .home .clase1 .botones__download .boton__caja a button {
+        background-color: #26528c;
+        color: #fff;
+        border-style: none;
+        border-radius: 0.4375rem;
+        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+        font-size: 0.8125rem; }
+        .home .clase1 .botones__download .boton__caja a button:hover {
+          box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+          background-color: #17498a;
+          color: #ccc; }
   .home :not(pre) > code[class*=language-],
   .home pre[class*=language-] {
     background-color: #242526; }

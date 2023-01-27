@@ -57,6 +57,12 @@
                     }
 
                     @include boton__caja;
+
+                    span {
+                        color: #fff;
+                        background-color: $secondary-color;
+                        margin-bottom: 15px;
+                    }
                 }
             }
         }

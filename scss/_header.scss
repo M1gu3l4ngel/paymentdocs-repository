@@ -26,14 +26,20 @@ body {
             }
         }
 
-        .titulo__footer {
-            width: auto;
-            height: auto;
-    
-            h2 {
+        .nav-pills .nav-link {
+            color: $toggle-color;
+
+            &:hover {
                 color: $text-color;
-                font-size: 1rem;
-                margin: 0;
+            }
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            background-color: $secondary-color;
+            color: $toggle-color;
+
+            &:hover {
+                background-color: $secondary-color2;
             }
         }
 
