@@ -205,7 +205,8 @@ html[data-theme='dark'] .home .clase1 .botones__cambio .boton__caja a button {
     background-color: #17498a;
     color: #ccc; }
 
-html[data-theme='dark'] body header .nav-pills .nav-link.active, html[data-theme='dark'] body header .nav-pills .show > .nav-link {
+html[data-theme='dark'] body header .nav-pills .nav-link.active,
+html[data-theme='dark'] body header .nav-pills .show > .nav-link {
   color: #fff; }
 
 html[data-theme='dark'] .home .tema .caja .card__caja .info__caja .badge-docs {
@@ -219,6 +220,13 @@ html[data-theme='dark'] footer .navbar {
 
 html[data-theme='dark'] footer .titulo__footer h2 {
   color: #242526; }
+
+html[data-theme='dark'] .home .web-builder .web__builder h2 {
+  color: #242526; }
+  html[data-theme='dark'] .home .web-builder .web__builder h2 a {
+    color: #242526; }
+    html[data-theme='dark'] .home .web-builder .web__builder h2 a:hover {
+      color: #ccc; }
 
 input[type=checkbox] {
   height: 100px;
@@ -257,6 +265,9 @@ input:checked + label:after {
       .home .titulo .contenedor__titulo .contenido__titulo p {
         font-size: 1.25rem;
         color: #9b9d9e; }
+    .home .titulo .contenedor__titulo .img-payment img {
+      width: 800px;
+      height: auto; }
   .home .tema {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
@@ -293,48 +304,37 @@ input:checked + label:after {
           margin-bottom: 10px; }
         .home .tema .caja .card__caja .info__caja .utah {
           background-color: orange;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .washington {
           background-color: #239c47;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .arizona {
           background-color: #4685b9;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .california {
           background-color: #8229b6;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .colorado {
           background-color: #2ecf64;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .idaho {
           background-color: #bdba22;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .nevada {
           background-color: #f18f55;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .oklahoma {
           background-color: #642602;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .oregon {
           background-color: #1f29b8;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .texas {
           background-color: #5b7c0f;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
         .home .tema .caja .card__caja .info__caja .wyoming {
           background-color: #f32c2c;
-          margin-top: 4px;
-          margin-left: 10px; }
+          margin-top: 4px; }
 
 .home {
   /* ======= Contenido ======= */ }
@@ -353,6 +353,14 @@ input:checked + label:after {
       .home .clase1 .contenido__clase1 .img-cont__clase1 {
         margin-bottom: 2rem; }
         .home .clase1 .contenido__clase1 .img-cont__clase1 img {
+          border-radius: 0.4375rem;
+          max-width: 100%;
+          height: auto;
+          width: 40.625rem;
+          border: 0.0625rem #26528c solid; }
+      .home .clase1 .contenido__clase1 .img-payment {
+        margin-bottom: 2rem; }
+        .home .clase1 .contenido__clase1 .img-payment img {
           border-radius: 0.4375rem;
           max-width: 100%;
           height: auto;
@@ -433,6 +441,19 @@ input:checked + label:after {
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
           background-color: #17498a;
           color: #ccc; }
+  .home .web-builder {
+    margin-bottom: 20px; }
+    .home .web-builder .web__builder {
+      width: auto;
+      height: auto; }
+      .home .web-builder .web__builder h2 {
+        color: #ccc;
+        font-size: 1rem;
+        margin: 0; }
+      .home .web-builder .web__builder .link-miguel {
+        color: #ccc; }
+        .home .web-builder .web__builder .link-miguel:hover {
+          color: #fff; }
   .home :not(pre) > code[class*=language-],
   .home pre[class*=language-] {
     background-color: #242526; }

@@ -1,5 +1,5 @@
 .home {
-    
+
     /* ======= Contenido ======= */
     .clase1 {
         width: 100%;
@@ -20,6 +20,18 @@
             text-align: center;
 
             .img-cont__clase1 {
+                margin-bottom: 2rem;
+
+                img {
+                    border-radius: 0.4375rem;
+                    max-width: 100%;
+                    height: auto;
+                    width: 40.625rem;
+                    border: 0.0625rem $secondary-color solid;
+                }
+            }
+
+            .img-payment {
                 margin-bottom: 2rem;
 
                 img {
@@ -145,6 +157,31 @@
             }
         }
     }
+
+    .web-builder {
+        margin-bottom: 20px;
+
+        .web__builder {
+            width: auto;
+            height: auto;
+
+            h2 {
+                color: $text-color;
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            .link-miguel {
+                color: $text-color;
+
+                &:hover {
+                    color: $toggle-color;
+                }
+            }
+        }
+    }
+
+
 
     :not(pre)>code[class*=language-],
     pre[class*=language-] {
