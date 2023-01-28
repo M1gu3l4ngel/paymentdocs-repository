@@ -167,7 +167,7 @@
 
             h2 {
                 color: $text-color;
-                font-size: 1rem;
+                font-size: 0.875rem;
                 margin: 0;
             }
 
@@ -177,6 +177,19 @@
                 &:hover {
                     color: $toggle-color;
                 }
+            }
+        }
+    }
+
+    .breadcrumb-style {
+        margin-top: 20px;
+
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $secondary-color2;
             }
         }
     }

@@ -448,12 +448,19 @@ input:checked + label:after {
       height: auto; }
       .home .web-builder .web__builder h2 {
         color: #ccc;
-        font-size: 1rem;
+        font-size: 0.875rem;
         margin: 0; }
       .home .web-builder .web__builder .link-miguel {
         color: #ccc; }
         .home .web-builder .web__builder .link-miguel:hover {
           color: #fff; }
+  .home .breadcrumb-style {
+    margin-top: 20px; }
+    .home .breadcrumb-style a {
+      color: #26528c;
+      text-decoration: none; }
+      .home .breadcrumb-style a:hover {
+        color: #17498a; }
   .home :not(pre) > code[class*=language-],
   .home pre[class*=language-] {
     background-color: #242526; }
@@ -525,4 +532,7 @@ footer {
   header .navigation {
     width: 22.8125rem; }
   footer .navigation2 {
-    width: 22.8125rem; } }
+    width: 22.8125rem; }
+  .home .breadcrumb-style {
+    justify-content: center;
+    display: flex; } }
