@@ -20,3 +20,93 @@
         }
     }
 }
+
+
+/* ====== Badge de Ciudades ====== */
+@mixin utah {
+    .utah {
+        background-color: orange;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin washington {
+    .washington {
+        background-color: #239c47;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin arizona {
+    .arizona {
+        background-color: #4685b9;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin california {
+    .california {
+        background-color: #8229b6;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin colorado {
+    .colorado {
+        background-color: #2ecf64;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin idaho {
+    .idaho {
+        background-color: #bdba22;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin nevada {
+    .nevada {
+        background-color: #f18f55;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin oklahoma {
+    .oklahoma {
+        background-color: #642602;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin oregon {
+    .oregon {
+        background-color: #1f29b8;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin texas {
+    .texas {
+        background-color: #5b7c0f;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}
+
+@mixin wyoming {
+    .wyoming {
+        background-color: #f32c2c;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+}

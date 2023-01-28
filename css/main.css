@@ -34,6 +34,7 @@ html::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
 
 /* ====== Botonera de cajas / Inicio ====== */
+/* ====== Badge de Ciudades ====== */
 /* ====== Grow ====== */
 .hvr-grow {
   vertical-align: middle;
@@ -207,7 +208,7 @@ html[data-theme='dark'] .home .clase1 .botones__cambio .boton__caja a button {
 html[data-theme='dark'] body header .nav-pills .nav-link.active, html[data-theme='dark'] body header .nav-pills .show > .nav-link {
   color: #fff; }
 
-html[data-theme='dark'] .home .tema .caja .card__caja .info__caja span {
+html[data-theme='dark'] .home .tema .caja .card__caja .info__caja .badge-docs {
   background-color: red; }
 
 html[data-theme='dark'] body header .nav-pills .nav-link {
@@ -289,7 +290,51 @@ input:checked + label:after {
         .home .tema .caja .card__caja .info__caja span {
           color: #fff;
           background-color: #26528c;
-          margin-bottom: 15px; }
+          margin-bottom: 10px; }
+        .home .tema .caja .card__caja .info__caja .utah {
+          background-color: orange;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .washington {
+          background-color: #239c47;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .arizona {
+          background-color: #4685b9;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .california {
+          background-color: #8229b6;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .colorado {
+          background-color: #2ecf64;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .idaho {
+          background-color: #bdba22;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .nevada {
+          background-color: #f18f55;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .oklahoma {
+          background-color: #642602;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .oregon {
+          background-color: #1f29b8;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .texas {
+          background-color: #5b7c0f;
+          margin-top: 4px;
+          margin-left: 10px; }
+        .home .tema .caja .card__caja .info__caja .wyoming {
+          background-color: #f32c2c;
+          margin-top: 4px;
+          margin-left: 10px; }
 
 .home {
   /* ======= Contenido ======= */ }
