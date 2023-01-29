@@ -32,6 +32,10 @@
 /* ====== Por encima de 768px ====== */
 @media screen and (min-width: 768px) {}
 
+/* ====== Por encima de 576px ====== */
+@media screen and (min-width: 576px) {
+    
+}
 
 /* ====== Por debajo de 576px ====== */
 @media screen and (max-width: 576px) {
@@ -52,20 +56,15 @@
         font-size: 1.5rem;
     }
 
-    body header .nav-pills {
-        display: none;
-    }
-
-
     header {
         .navigation {
-            width: 22.8125rem;
+            width: 23rem;
         }
     }
 
     footer {
         .navigation2 {
-            width: 22.8125rem;
+            width: 23rem;
         }
     }
 
@@ -73,6 +72,4 @@
         justify-content: center;
         display: flex;
     }
-
-
 }

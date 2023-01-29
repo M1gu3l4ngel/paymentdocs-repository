@@ -4,7 +4,7 @@
  }
 
  .label {
-     background-color: #26528c;
+     background-color: $secondary-color;
      border-radius: 7px;
      cursor: pointer;
      display: flex;
@@ -13,7 +13,7 @@
      padding: 5px;
      position: relative;
      height: 22px;
-     width: 56px;
+     width: 42px;
      transform: scale(1.5);
  }
 
@@ -29,7 +29,7 @@
  }
 
  .checkbox:checked+.label .ball {
-     transform: translateX(34px);
+     transform: translateX(21px);
  }
 
 
@@ -85,7 +85,7 @@
      }
 
      .home .titulo .contenedor__titulo .contenido__titulo h2 {
-         color: #26528c;
+         color: $secondary-color;
      }
 
      .home .tema .caja .card__caja .info__caja h2 {
@@ -111,7 +111,7 @@
          top: 3.5px;
          height: 14px;
          width: 14px;
-         transform: translateX(34px);
+         transform: translateX(21px);
          transition: transform 0.2s linear;
      }
 
@@ -171,7 +171,7 @@
  }
 
  input:checked+label {
-     background-color: #26528c;
+     background-color: $secondary-color;
  }
 
  input:checked+label:after {

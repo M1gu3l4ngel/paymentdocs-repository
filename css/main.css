@@ -13,7 +13,7 @@
 /* ====== Transiciones ====== */
 /* ====== Color al copiar texto en web ====== */
 ::selection {
-  background-color: #26528c;
+  background-color: #14558d;
   color: #fff; }
 
 /* ====== Ancho y Alto del Scroll ====== */
@@ -25,12 +25,12 @@ html::-webkit-scrollbar {
 
 /* ====== Ponemos un color de fondo y redondeamos las esquinas del thumb ====== */
 html::-webkit-scrollbar-thumb {
-  background: #26528c;
+  background: #14558d;
   border-radius: 0.25rem; }
 
 /* ====== Cambiamos el fondo y agregamos una sombra cuando esté en hover ====== */
 html::-webkit-scrollbar-thumb:hover {
-  background: #17498a;
+  background: #083d6b;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
 
 /* ====== Botonera de cajas / Inicio ====== */
@@ -77,10 +77,10 @@ body {
       body header .nav-pills .nav-link:hover {
         color: #ccc; }
     body header .nav-pills .nav-link.active, body header .nav-pills .show > .nav-link {
-      background-color: #26528c;
+      background-color: #14558d;
       color: #fff; }
       body header .nav-pills .nav-link.active:hover, body header .nav-pills .show > .nav-link:hover {
-        background-color: #17498a; }
+        background-color: #083d6b; }
     body header .redes__header .html {
       color: #f06529; }
     body header .redes__header .css {
@@ -93,7 +93,7 @@ body {
       padding-left: 0.625rem;
       padding-right: 0.625rem; }
       body header .redes__header a:hover {
-        border: 1px #26528c solid;
+        border: 1px #14558d solid;
         border-radius: 0.4375rem;
         background-color: #3a3b3c; }
       body header .redes__header a i {
@@ -105,7 +105,7 @@ body {
   position: absolute; }
 
 .label {
-  background-color: #26528c;
+  background-color: #14558d;
   border-radius: 7px;
   cursor: pointer;
   display: flex;
@@ -114,7 +114,7 @@ body {
   padding: 5px;
   position: relative;
   height: 22px;
-  width: 56px;
+  width: 42px;
   transform: scale(1.5); }
 
 .label .ball {
@@ -128,7 +128,7 @@ body {
   transition: transform 0.2s linear; }
 
 .checkbox:checked + .label .ball {
-  transform: translateX(34px); }
+  transform: translateX(21px); }
 
 .fa-moon {
   color: #f1c40f;
@@ -169,18 +169,18 @@ html[data-theme='dark'] body header .navbar {
   background-color: #d6d6d6; }
 
 html[data-theme='dark'] .home .titulo .contenedor__titulo .contenido__titulo h2 {
-  color: #26528c; }
+  color: #14558d; }
 
 html[data-theme='dark'] .home .tema .caja .card__caja .info__caja h2 {
   color: #242526;
   font-weight: bold; }
 
 html[data-theme='dark'] .home .tema .caja .card__caja .info__caja .boton__caja a button {
-  background-color: #26528c;
+  background-color: #14558d;
   border-style: none;
   color: #fff; }
   html[data-theme='dark'] .home .tema .caja .card__caja .info__caja .boton__caja a button:hover {
-    background-color: #17498a;
+    background-color: #083d6b;
     color: #ccc; }
 
 html[data-theme='dark'] .label .ball {
@@ -190,11 +190,11 @@ html[data-theme='dark'] .label .ball {
   top: 3.5px;
   height: 14px;
   width: 14px;
-  transform: translateX(34px);
+  transform: translateX(21px);
   transition: transform 0.2s linear; }
 
 html[data-theme='dark'] .home .clase1 .botones__cambio .boton__caja a button {
-  background-color: #26528c;
+  background-color: #14558d;
   color: #fff;
   border-style: none;
   border-radius: 0.4375rem;
@@ -202,7 +202,7 @@ html[data-theme='dark'] .home .clase1 .botones__cambio .boton__caja a button {
   font-size: 0.8125rem; }
   html[data-theme='dark'] .home .clase1 .botones__cambio .boton__caja a button:hover {
     box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-    background-color: #17498a;
+    background-color: #083d6b;
     color: #ccc; }
 
 html[data-theme='dark'] body header .nav-pills .nav-link.active,
@@ -234,7 +234,7 @@ input[type=checkbox] {
   visibility: hidden; }
 
 input:checked + label {
-  background-color: #26528c; }
+  background-color: #14558d; }
 
 input:checked + label:after {
   left: calc(100% - 5px);
@@ -292,15 +292,15 @@ input:checked + label:after {
           border-style: none;
           border-radius: 0.4375rem;
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-          border: 1px #26528c solid;
+          border: 1px #14558d solid;
           font-size: 0.8125rem; }
           .home .tema .caja .card__caja .info__caja .boton__caja a button:hover {
             box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
             background-color: #3a3b3c;
-            border: 1px #17498a solid; }
+            border: 1px #083d6b solid; }
         .home .tema .caja .card__caja .info__caja span {
           color: #fff;
-          background-color: #26528c;
+          background-color: #14558d;
           margin-bottom: 10px; }
         .home .tema .caja .card__caja .info__caja .utah {
           background-color: orange;
@@ -357,7 +357,7 @@ input:checked + label:after {
           max-width: 100%;
           height: auto;
           width: 40.625rem;
-          border: 0.0625rem #26528c solid; }
+          border: 0.0625rem #14558d solid; }
       .home .clase1 .contenido__clase1 .img-payment {
         margin-bottom: 2rem; }
         .home .clase1 .contenido__clase1 .img-payment img {
@@ -366,7 +366,7 @@ input:checked + label:after {
           height: auto;
           width: 40.625rem; }
       .home .clase1 .contenido__clase1 .separadores {
-        color: #26528c;
+        color: #14558d;
         margin-top: 1.25rem;
         margin-bottom: 1.25rem; }
       .home .clase1 .contenido__clase1 .cont__clase1 {
@@ -396,7 +396,7 @@ input:checked + label:after {
         text-align: left;
         color: #fff;
         margin-top: 38px;
-        background-color: #26528c;
+        background-color: #14558d;
         border-style: none;
         cursor: pointer; }
         .home .clase1 .contenido__clase1 .alerts i {
@@ -415,12 +415,12 @@ input:checked + label:after {
         border-style: none;
         border-radius: 0.4375rem;
         box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-        border: 1px #26528c solid;
+        border: 1px #14558d solid;
         font-size: 0.8125rem; }
         .home .clase1 .botones__cambio .boton__caja a button:hover {
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
           background-color: #3a3b3c;
-          border: 1px #17498a solid; }
+          border: 1px #083d6b solid; }
     .home .clase1 .botones__download {
       width: 100%;
       height: auto;
@@ -431,7 +431,7 @@ input:checked + label:after {
       margin-bottom: 30px;
       margin-top: 10px; }
       .home .clase1 .botones__download .boton__caja a button {
-        background-color: #26528c;
+        background-color: #14558d;
         color: #fff;
         border-style: none;
         border-radius: 0.4375rem;
@@ -439,7 +439,7 @@ input:checked + label:after {
         font-size: 0.8125rem; }
         .home .clase1 .botones__download .boton__caja a button:hover {
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-          background-color: #17498a;
+          background-color: #083d6b;
           color: #ccc; }
   .home .web-builder {
     margin-bottom: 20px; }
@@ -457,10 +457,10 @@ input:checked + label:after {
   .home .breadcrumb-style {
     margin-top: 20px; }
     .home .breadcrumb-style a {
-      color: #26528c;
+      color: #14558d;
       text-decoration: none; }
       .home .breadcrumb-style a:hover {
-        color: #17498a; }
+        color: #083d6b; }
   .home :not(pre) > code[class*=language-],
   .home pre[class*=language-] {
     background-color: #242526; }
@@ -501,7 +501,7 @@ footer {
     padding-left: 0.625rem;
     padding-right: 0.625rem; }
     footer .redes__footer a:hover {
-      border: 1px #26528c solid;
+      border: 1px #14558d solid;
       border-radius: 0.4375rem;
       background-color: #3a3b3c; }
     footer .redes__footer a i {
@@ -517,6 +517,7 @@ footer {
 /* ====== Por encima de 768px ====== */
 /* ====== Por debajo de 768px ====== */
 /* ====== Por encima de 768px ====== */
+/* ====== Por encima de 576px ====== */
 /* ====== Por debajo de 576px ====== */
 @media screen and (max-width: 576px) {
   .home .titulo .contenedor__titulo .contenido__titulo h2 {
@@ -527,12 +528,10 @@ footer {
     font-size: 2.25rem; }
   .home .clase1 .contenido__clase1 .cont__clase1 h2 {
     font-size: 1.5rem; }
-  body header .nav-pills {
-    display: none; }
   header .navigation {
-    width: 22.8125rem; }
+    width: 23rem; }
   footer .navigation2 {
-    width: 22.8125rem; }
+    width: 23rem; }
   .home .breadcrumb-style {
     justify-content: center;
     display: flex; } }
