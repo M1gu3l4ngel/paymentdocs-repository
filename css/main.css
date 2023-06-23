@@ -272,7 +272,7 @@ input:checked + label:after {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
     .home .tema .caja .card__caja {
-      height: 150px;
+      height: 177.5px;
       background-color: #242526;
       box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
       display: flex;
@@ -283,7 +283,7 @@ input:checked + label:after {
         word-wrap: break-word;
         text-align: center; }
         .home .tema .caja .card__caja .info__caja h2 {
-          font-size: 1.375rem;
+          font-size: 18px;
           color: #ccc;
           margin-bottom: 1.25rem; }
         .home .tema .caja .card__caja .info__caja .boton__caja a button {
@@ -516,6 +516,10 @@ footer {
 /* ====== Por debajo de 789px ====== */
 /* ====== Por encima de 768px ====== */
 /* ====== Por debajo de 768px ====== */
+@media screen and (max-width: 768px) {
+  .home {
+    height: auto; } }
+
 /* ====== Por encima de 768px ====== */
 /* ====== Por encima de 576px ====== */
 /* ====== Por debajo de 576px ====== */
