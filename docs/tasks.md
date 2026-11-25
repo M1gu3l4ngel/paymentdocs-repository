@@ -33,7 +33,7 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 **Plataforma:** Repositorio
 **Requiere:** nada
 
-- [ ] Push del commit que actualiza este panel.
+- [ ] Push de la regla de Dependabot y cerrar el PR #1 (TypeScript 7 y `@types/node` 26) si Dependabot no lo cierra solo.
 - [ ] Renombrar la carpeta local a `paymentdocs-repository`, con la sesión de Claude cerrada.
 - [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer; después, cambiar `site` en `astro.config.mjs` y las URLs del README.
 - [ ] Decidir si la URL vieja (`…/stout-documents-portal/`) necesita un repo pequeño de redirección hacia la URL final.
