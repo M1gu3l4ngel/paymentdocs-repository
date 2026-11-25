@@ -2,44 +2,26 @@
 
 Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el README de `~/.claude/panel/`.
 
-# Fase 1 — Base y stack
+# Fase 2 — Rediseño
 
-## Stack Astro con TypeScript estricto
+## Revisión del diseño en local
 
 **Plataforma:** Sitio web
 **Prioridad:** P0
 **Requiere:** nada
 **Estado:** en curso
 
-- [ ] Eliminar el sitio viejo (HTML, SCSS, Prism, imágenes duplicadas, `payments.html`), con confirmación del usuario.
-- [ ] Astro con `astro/tsconfigs/strictest` y pnpm; `engines.node` como fuente única de la versión.
-- [ ] Un layout único (header, footer, tema) en lugar de los headers y footers copiados en cada página.
-- [ ] Cada documento (W-9, GL, WC, SA, SW, ULW) como Markdown en una content collection con esquema tipado.
-- [ ] Fuera Bootstrap, AOS, FontAwesome y `node-sass`: CSS propio con variables e iconos SVG locales.
+- [ ] El usuario revisa el sitio con `pnpm dev` y aprueba o pide cambios de diseño.
+- [ ] Ajustes de diseño que salgan de la revisión.
 
-# Fase 2 — Rediseño
-
-## Mockup del nuevo diseño
+## Pulido del sitio
 
 **Plataforma:** Sitio web
-**Prioridad:** P0
-**Requiere:** «Stack Astro con TypeScript estricto»
+**Prioridad:** P1
+**Requiere:** «Revisión del diseño en local»
 
-- [ ] Home con filtro de documentos, tarjetas con qué es, si es obligatorio y su acción directa.
-- [ ] Página de detalle: resumen, pasos, correo de envío con botón de copiar y descargas.
-- [ ] Logos de Stout (claro y oscuro), azul de marca, modo claro y oscuro según el sistema.
-- [ ] Aprobación del usuario antes de implementarlo.
-
-## Implementar el rediseño
-
-**Plataforma:** Sitio web
-**Prioridad:** P0
-**Requiere:** «Mockup del nuevo diseño»
-
-- [ ] Home, checklist de documentos y páginas de detalle según el mockup aprobado.
-- [ ] Accesibilidad AA (contraste, foco visible, semántica), meta description y Open Graph.
-- [ ] Imágenes optimizadas; PDFs de Google Drive personal movidos al repo o señalados para pasarlos a Stout.
-- [ ] Corregir el breadcrumb de W-9 y los `alt` heredados de la plantilla de curso.
+- [ ] Imagen Open Graph para compartir el enlace.
+- [ ] Revisión de accesibilidad: contraste AA en los dos temas, orden de foco y lector de pantalla.
 
 # Fase 3 — CI, documentación y GitHub
 
@@ -47,21 +29,22 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 
 **Plataforma:** Repositorio
 **Prioridad:** P0
-**Requiere:** «Implementar el rediseño»
+**Requiere:** «Revisión del diseño en local»
 
-- [ ] `ci.yml`: `astro check`, `prettier --check`, build y check de enlaces; acciones fijadas por SHA.
-- [ ] Deploy a GitHub Pages con Actions en lugar del build legacy desde la raíz.
-- [ ] `dependabot.yml` mensual para `github-actions`.
+- [ ] `ci.yml`: `pnpm check`, `pnpm format:check`, build y check de enlaces; acciones fijadas por SHA.
+- [ ] Workflow de deploy a GitHub Pages con Actions, y cambiar la fuente de Pages de «branch» a «GitHub Actions» antes de fusionar a `main` (si no, Pages sirve la raíz sin `index.html`).
+- [ ] `dependabot.yml` mensual para `github-actions` y `npm`.
 
 ## Documentación pública
 
 **Plataforma:** Repositorio
 **Prioridad:** P1
-**Requiere:** «Implementar el rediseño»
+**Requiere:** «Revisión del diseño en local»
 
 - [ ] README con cabecera de logo claro/oscuro, captura y diagrama, solo en inglés.
 - [ ] CHANGELOG, CONTRIBUTING, SECURITY, CODE_OF_CONDUCT y plantillas de issues y PR.
 - [ ] LICENSE propietaria de Stout Building Contractors (todos los derechos reservados).
+- [ ] Check de documentos de comunidad adaptado a un repo solo en inglés.
 
 ## Metadatos de GitHub
 
@@ -72,12 +55,23 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 - [ ] Descripción en inglés y de 6 a 10 topics.
 - [ ] Ruleset de `main` contra borrado y push forzado; reporte privado de vulnerabilidades.
 
-# Lo hace el dueño — traspaso
-
-## Traspaso a la organización de Stout
+## Renombrar a paymentdocs-repository
 
 **Plataforma:** Repositorio
+**Prioridad:** P1
 **Requiere:** «Metadatos de GitHub»
 
+- [ ] Cambiar `base` de Astro, `CLAUDE.md`, README y la web del repo a `/paymentdocs-repository/`.
+- [ ] Redirección desde la URL vieja de Pages (GitHub no la redirige al renombrar).
+
+# Lo hace el dueño — aprobación, renombre y traspaso
+
+## Fusionar, renombrar y traspasar
+
+**Plataforma:** Repositorio
+**Requiere:** «Renombrar a paymentdocs-repository»
+
+- [ ] Aprobar y fusionar `redesign` en `main` con un PR.
+- [ ] Renombrar el repo en GitHub (Settings → General → Repository name) y la carpeta local.
 - [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer.
-- [ ] Actualizar la URL de Pages en el README y en la web del repo tras el traspaso.
+- [ ] Confirmar con Stout los enlaces de Google Drive: hoy viven en una cuenta personal.

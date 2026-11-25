@@ -1,0 +1,148 @@
+---
+import type { GetStaticPaths } from "astro";
+import { Image } from "astro:assets";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import CopyEmail from "../../components/CopyEmail.astro";
+import Icon from "../../components/Icon.astro";
+import WaiverTemplates from "../../components/WaiverTemplates.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { documentPath, withBase } from "../../lib/paths";
+
+type Document = CollectionEntry<"documents">;
+
+interface Props {
+	document: Document;
+	previous: Document | undefined;
+	next: Document | undefined;
+}
+
+export const getStaticPaths = (async () => {
+	const documents = (await getCollection("documents")).sort((a, b) => a.data.order - b.data.order);
+	return documents.map((document, index) => ({
+		params: { id: document.id },
+		props: { document, previous: documents[index - 1], next: documents[index + 1] },
+	}));
+}) satisfies GetStaticPaths;
+
+const { document, previous, next } = Astro.props;
+const { title, shortName, summary, sendTo, mustInclude, notice, example, downloads } =
+	document.data;
+const { Content } = await render(document);
+---
+
+<BaseLayout title={title} description={summary}>
+	<div class="container">
+		<nav class="breadcrumb" aria-label="Breadcrumb">
+			<ol>
+				<li>
+					<a href={withBase("/")}>Documents</a>
+				</li>
+				<li>
+					<span aria-current="page">{title}</span>
+				</li>
+			</ol>
+		</nav>
+	</div>
+
+	<header class="doc-header">
+		<div class="container">
+			<span class="tag">{shortName}</span>
+			<h1>{title}</h1>
+			<p class="doc-header__summary">{summary}</p>
+			<CopyEmail email={sendTo} />
+		</div>
+	</header>
+
+	<div class="container doc-layout">
+		<article class="doc-content prose">
+			<Content />
+
+			{mustInclude.length > 0 && (
+				<section class="checklist" aria-labelledby="must-include">
+					<h2 id="must-include">What it must include</h2>
+					<ul>
+						{mustInclude.map((item) => (
+							<li>
+								<Icon name="check" size={18} />
+								<span>{item}</span>
+							</li>
+						))}
+					</ul>
+				</section>
+			)}
+
+			{notice && (
+				<aside class="callout" role="note">
+					<Icon name="info" />
+					<p>{notice}</p>
+				</aside>
+			)}
+
+			{document.data.hasWaiverTemplates && <WaiverTemplates />}
+		</article>
+
+		{(example || downloads.length > 0) && (
+			<aside class="doc-aside">
+				{downloads.length > 0 && (
+					<section class="panel" aria-labelledby="downloads">
+						<h2 id="downloads">Downloads</h2>
+						<ul class="download-list">
+							{downloads.map((download) => (
+								<li>
+									<a class="button" href={download.href} target="_blank" rel="noopener">
+										<Icon name="download" size={18} />
+										{download.label}
+									</a>
+								</li>
+							))}
+						</ul>
+					</section>
+				)}
+				{example && (
+					<figure class="panel example">
+						<a href={example.src.src} target="_blank" rel="noopener">
+							<Image
+								src={example.src}
+								alt={example.alt}
+								widths={[360, 720]}
+								sizes="(min-width: 960px) 320px, 100vw"
+							/>
+						</a>
+						<figcaption>Sample {shortName}. Select it to open it full size.</figcaption>
+					</figure>
+				)}
+			</aside>
+		)}
+	</div>
+
+	<nav class="container pager" aria-label="Documents">
+		{previous ? (
+			<a class="pager__link" href={documentPath(previous.id)}>
+				<Icon name="arrow-left" />
+				<span>
+					<span class="pager__hint">Previous</span>
+					{previous.data.title}
+				</span>
+			</a>
+		) : (
+			<span />
+		)}
+		{next ? (
+			<a class="pager__link pager__link--next" href={documentPath(next.id)}>
+				<span>
+					<span class="pager__hint">Next</span>
+					{next.data.title}
+				</span>
+				<Icon name="arrow-right" />
+			</a>
+		) : (
+			<a class="pager__link pager__link--next" href={withBase("/")}>
+				<span>
+					<span class="pager__hint">Done</span>
+					All documents
+				</span>
+				<Icon name="arrow-right" />
+			</a>
+		)}
+	</nav>
+</BaseLayout>

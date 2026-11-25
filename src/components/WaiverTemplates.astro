@@ -1,0 +1,42 @@
+---
+import { WAIVER_TEMPLATES, WAIVER_TYPES } from "../data/waiver-templates";
+import Icon from "./Icon.astro";
+---
+
+<section class="templates" aria-labelledby="templates-heading">
+	<h2 id="templates-heading">Templates by state</h2>
+	<p>Download the template for the state where the project is.</p>
+	<div class="templates__table-wrap">
+		<table class="templates__table">
+			<thead>
+				<tr>
+					<th scope="col">State</th>
+					{WAIVER_TYPES.map((type) => (
+						<th scope="col">{type.label}</th>
+					))}
+				</tr>
+			</thead>
+			<tbody>
+				{WAIVER_TEMPLATES.map(({ state, templates }) => (
+					<tr>
+						<th scope="row">{state}</th>
+						{WAIVER_TYPES.map((type) => (
+							<td data-label={type.label}>
+								<a href={templates[type.key]} target="_blank" rel="noopener">
+									<Icon name="download" size={16} />
+									<span>
+										Download
+										<span class="visually-hidden">
+											{" "}
+											{state} {type.label.toLowerCase()} waiver
+										</span>
+									</span>
+								</a>
+							</td>
+						))}
+					</tr>
+				))}
+			</tbody>
+		</table>
+	</div>
+</section>

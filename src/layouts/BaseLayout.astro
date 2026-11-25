@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import { withBase } from "../lib/paths";
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+const fullTitle = title === "Documents" ? "Documents | Stout" : `${title} | Stout Documents`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		<link rel="icon" type="image/png" href={withBase("favicon.png")} />
+		<meta name="color-scheme" content="light dark" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Stout Documents" />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<script is:inline>
+			// Runs before paint so the saved or system theme applies without a flash.
+			(() => {
+				let theme = null;
+				try {
+					theme = localStorage.getItem("theme");
+				} catch {}
+				if (theme !== "light" && theme !== "dark") {
+					theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+				}
+				document.documentElement.dataset.theme = theme;
+			})();
+		</script>
+	</head>
+	<body>
+		<a class="skip-link" href="#main">
+			Skip to content
+		</a>
+		<SiteHeader />
+		<main id="main">
+			<slot />
+		</main>
+		<SiteFooter />
+	</body>
+</html>

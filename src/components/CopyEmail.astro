@@ -1,0 +1,40 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+	email: string;
+}
+
+const { email } = Astro.props;
+---
+
+<div class="send-to">
+	<span class="send-to__label">Send to</span>
+	<a class="send-to__email" href={`mailto:${email}`}>
+		<Icon name="mail" size={18} />
+		{email}
+	</a>
+	<button class="send-to__copy" type="button" data-copy={email}>
+		<Icon name="copy" size={16} />
+		<span data-copy-label>Copy</span>
+	</button>
+</div>
+
+<script>
+	for (const button of document.querySelectorAll<HTMLButtonElement>("[data-copy]")) {
+		const label = button.querySelector<HTMLElement>("[data-copy-label]");
+		button.addEventListener("click", async () => {
+			const value = button.dataset["copy"];
+			if (!value || !label) return;
+			try {
+				await navigator.clipboard.writeText(value);
+				label.textContent = "Copied";
+			} catch {
+				label.textContent = "Copy failed";
+			}
+			window.setTimeout(() => {
+				label.textContent = "Copy";
+			}, 2000);
+		});
+	}
+</script>

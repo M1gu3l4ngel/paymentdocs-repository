@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import logoDark from "../assets/brand/stout-logo-dark.png";
+import logoWhite from "../assets/brand/stout-logo-white.png";
+import { withBase } from "../lib/paths";
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<header class="site-header">
+	<div class="container site-header__inner">
+		<a class="brand" href={withBase("/")}>
+			<Image
+				class="brand__logo brand__logo--light"
+				src={logoDark}
+				alt="Stout"
+				height={44}
+				densities={[1, 2, 3]}
+			/>
+			<Image
+				class="brand__logo brand__logo--dark"
+				src={logoWhite}
+				alt="Stout"
+				height={44}
+				densities={[1, 2, 3]}
+			/>
+			<span class="brand__divider" aria-hidden="true"></span>
+			<span class="brand__name">Documents</span>
+		</a>
+		<ThemeToggle />
+	</div>
+</header>

@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { documentPath } from "../lib/paths";
+import Icon from "./Icon.astro";
+
+interface Props {
+	document: CollectionEntry<"documents">;
+}
+
+const { document } = Astro.props;
+const { title, shortName, order, summary } = document.data;
+const searchText = `${title} ${shortName} ${summary}`.toLowerCase();
+---
+
+<li class="doc-card" data-search={searchText}>
+	<a class="doc-card__link" href={documentPath(document.id)}>
+		<span class="doc-card__step" aria-hidden="true">
+			{String(order).padStart(2, "0")}
+		</span>
+		<span class="doc-card__body">
+			<span class="doc-card__meta">
+				<span class="tag">{shortName}</span>
+				<span class="tag tag--required">Required</span>
+			</span>
+			<span class="doc-card__title">{title}</span>
+			<span class="doc-card__summary">{summary}</span>
+		</span>
+		<Icon name="arrow-right" class="doc-card__arrow" />
+	</a>
+</li>

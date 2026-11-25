@@ -17,12 +17,36 @@ en GitHub.
 
 ## Stack
 
-| Pieza | Qué |
-|---|---|
-| Sitio | Estático, HTML y SCSS compilado con `node-sass` (en migración a Astro) |
-| Lenguaje | TypeScript estricto (`astro/tsconfigs/strictest`) tras la migración |
-| Paquetes | pnpm |
-| Despliegue | GitHub Pages |
+| Pieza      | Qué                                                                                         |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| Sitio      | Astro 7, estático, con `base: "/stout-documents-portal"` para GitHub Pages                  |
+| Lenguaje   | TypeScript estricto (`astro/tsconfigs/strictest`); TS 6 hasta que `@astrojs/check` admita 7 |
+| Estilos    | CSS propio en `src/styles/global.css`, con tokens de color claro y oscuro                   |
+| Paquetes   | pnpm; Node exacto en `engines.node` de `package.json`                                       |
+| Despliegue | GitHub Pages                                                                                |
+
+## Estructura
+
+| Ruta                              | Qué                                                                   |
+| --------------------------------- | --------------------------------------------------------------------- |
+| `src/content/documents/`          | Un Markdown por documento; el esquema está en `src/content.config.ts` |
+| `src/data/waiver-templates.ts`    | Plantillas de supplier waiver por estado (enlaces de Google Drive)    |
+| `src/pages/`                      | Home, página de cada documento (`documents/[id].astro`) y 404         |
+| `src/components/`, `src/layouts/` | Layout único, header, footer e iconos SVG en línea                    |
+| `public/pages/`                   | Redirecciones de las URLs del sitio viejo (`pages/w9.html`…)          |
+
+## Comandos
+
+Desde la raíz del repo, como usuario normal:
+
+| Comando             | Qué hace                           |
+| ------------------- | ---------------------------------- |
+| `pnpm install`      | Instala dependencias               |
+| `pnpm dev`          | Servidor local con recarga en vivo |
+| `pnpm check`        | Tipos y diagnósticos de Astro      |
+| `pnpm build`        | Genera el sitio en `dist/`         |
+| `pnpm preview`      | Sirve `dist/` para revisarlo       |
+| `pnpm format:check` | Comprueba el formato con Prettier  |
 
 ## Convenciones
 
