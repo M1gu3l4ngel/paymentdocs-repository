@@ -6,7 +6,7 @@ Lo diferido que no bloquea nada, con su porqué y el archivo concreto.
 
 **Plataforma:** Sitio web
 
-- [ ] `src/data/waiver-templates.ts`: los *Conditional final* y *Unconditional final* de Oregon apuntan a los mismos archivos de Drive que los de Oklahoma. Ya era así en el sitio viejo; confirmar con Stout cuáles son los de Oregon.
+- [ ] `src/data/waiver-templates.ts`: los _Conditional final_ y _Unconditional final_ de Oregon apuntan a los mismos archivos de Drive que los de Oklahoma. Ya era así en el sitio viejo; confirmar con Stout cuáles son los de Oregon.
 
 ### Plantillas de Texas
 
