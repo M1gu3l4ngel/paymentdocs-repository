@@ -2,44 +2,14 @@
 
 Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el README de `~/.claude/panel/`.
 
-# Fase 2 — Rediseño
-
-## Pulido del sitio
-
-**Plataforma:** Sitio web
-**Prioridad:** P1
-**Requiere:** nada
-
-- [ ] Imagen Open Graph para compartir el enlace.
-- [ ] Revisión de accesibilidad: contraste AA en los dos temas, orden de foco y lector de pantalla.
-
-# Fase 3 — Documentación y GitHub
-
-## Documentación pública
-
-**Plataforma:** Repositorio
-**Prioridad:** P0
-**Requiere:** nada
-**Estado:** en curso
-
-- [ ] README con cabecera de logo claro/oscuro, captura y diagrama, solo en inglés.
-- [ ] CHANGELOG, CONTRIBUTING, SECURITY, CODE_OF_CONDUCT y plantillas de issues y PR.
-- [ ] LICENSE propietaria de Stout Building Contractors (todos los derechos reservados).
-
-## Metadatos de GitHub
-
-**Plataforma:** Repositorio
-**Prioridad:** P1
-**Requiere:** «Documentación pública»
-
-- [ ] Descripción en inglés y de 6 a 10 topics.
-- [ ] Ruleset de `main` contra borrado y push forzado; reporte privado de vulnerabilidades.
+# Fase 3 — Cierre
 
 ## Renombrar a paymentdocs-repository
 
 **Plataforma:** Repositorio
 **Prioridad:** P1
-**Requiere:** «Metadatos de GitHub»
+**Requiere:** nada
+**Estado:** en curso
 
 - [ ] Cambiar `base` de Astro, `CLAUDE.md`, README y la web del repo a `/paymentdocs-repository/`.
 - [ ] Redirección desde la URL vieja de Pages (GitHub no la redirige al renombrar).
@@ -58,6 +28,15 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 - [ ] Supplier Waiver: la tabla por estado descarga el archivo correcto.
 - [ ] [Móvil] Supplier Waiver: la tabla se convierte en tarjetas por estado.
 - [ ] URLs viejas: `/stout-documents-portal/pages/w9.html` redirige a la página nueva del W-9.
+- [ ] Logo del header: se lee «Stout Building Contractors» en claro y «Stout» en oscuro.
+
+## Repositorio en GitHub
+
+**Plataforma:** Repositorio
+
+- [ ] README en GitHub: logo y captura cambian con el tema claro y oscuro de GitHub; el diagrama se ve.
+- [ ] Descripción y topics nuevos en la página del repo.
+- [ ] Tras el deploy: compartir el enlace por WhatsApp o correo muestra la imagen azul de Stout.
 
 # Lo hace el dueño — aprobación, renombre y traspaso
 
