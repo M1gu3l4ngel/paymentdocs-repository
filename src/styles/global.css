@@ -357,23 +357,31 @@ h2 {
 }
 
 .hero__inner {
-	padding-block: 56px 48px;
+	padding-block: 28px 24px;
 	max-width: var(--container);
 }
 
+.hero .eyebrow {
+	margin-bottom: 8px;
+}
+
 .hero h1 {
-	max-width: 18ch;
+	margin-bottom: 8px;
+	font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
 }
 
 .hero__lead {
-	max-width: 56ch;
-	margin: 0 0 20px;
+	max-width: 68ch;
+	margin: 0 0 14px;
 	color: var(--color-text-muted);
-	font-size: 1.1rem;
+}
+
+.hero .send-to {
+	margin-top: 0;
 }
 
 .section {
-	padding-top: 40px;
+	padding-top: 28px;
 }
 
 .section__head {
