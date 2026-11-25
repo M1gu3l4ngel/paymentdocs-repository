@@ -103,14 +103,23 @@ const { Content } = await render(document);
 				<section class="panel" aria-labelledby="downloads">
 					<h2 id="downloads">Downloads</h2>
 					<ul class="download-list">
-						{downloads.map((download) => (
-							<li>
-								<a class="button" href={download.href} target="_blank" rel="noopener">
-									<Icon name="download" size={18} />
-									{download.label}
-								</a>
-							</li>
-						))}
+						{downloads.map((download) =>
+							download.href.startsWith("forms/") ? (
+								<li>
+									<a class="button" href={withBase(download.href)} download>
+										<Icon name="download" size={18} />
+										{download.label}
+									</a>
+								</li>
+							) : (
+								<li>
+									<a class="button" href={download.href} target="_blank" rel="noopener">
+										<Icon name="external" size={18} />
+										{download.label}
+									</a>
+								</li>
+							),
+						)}
 					</ul>
 				</section>
 			</aside>

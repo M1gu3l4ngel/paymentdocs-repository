@@ -45,10 +45,12 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 **Plataforma:** Repositorio
 **Requiere:** «Renombrar a paymentdocs-repository»
 
+- [ ] Descargar de Drive la carpeta de supplier waivers por estado y pasar la ruta a Claude.
 - [ ] Verificar el sitio completo y aprobarlo.
 - [ ] Llevar los commits de `redesign` a `main` (fast-forward) y borrar `redesign`.
 - [ ] Cambiar la fuente de Pages a «GitHub Actions» (Settings → Pages → Source) antes del push.
 - [ ] Push de `main`.
 - [ ] Renombrar el repo en GitHub (Settings → General → Repository name) y la carpeta local.
 - [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer.
-- [ ] Confirmar con Stout los enlaces de Google Drive: hoy viven en una cuenta personal.
+- [ ] Borrar los documentos del Google Drive personal, solo cuando el sitio nuevo esté desplegado y sin enlaces a Drive.
+- [ ] Borrar la foto de cheques reales (`Ejemplo - Cheque Stout.jpeg`) de Drive y de `exported-documents`: muestra cuenta bancaria y firmas.

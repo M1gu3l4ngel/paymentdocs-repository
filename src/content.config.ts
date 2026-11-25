@@ -18,7 +18,12 @@ const documents = defineCollection({
 			mustInclude: z.array(z.string()).default([]),
 			notice: z.string().optional(),
 			example: z.object({ src: image(), alt: z.string() }).optional(),
-			downloads: z.array(z.object({ label: z.string(), href: z.url() })).default([]),
+			/** An external URL, or a file in public/ written as "forms/<file>.pdf". */
+			downloads: z
+				.array(
+					z.object({ label: z.string(), href: z.union([z.url(), z.string().regex(/^forms\//)]) }),
+				)
+				.default([]),
 			/** Shows the per-state supplier waiver templates below the content. */
 			hasWaiverTemplates: z.boolean().default(false),
 		}),

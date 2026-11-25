@@ -18,4 +18,4 @@ Lo diferido que no bloquea nada, con su porqué y el archivo concreto.
 
 **Plataforma:** Sitio web
 
-- [ ] Las plantillas de supplier affidavit y supplier waiver se descargan desde Google Drive. Si son de una cuenta personal, pasarlas a un Drive de Stout o al repo (`public/forms/`) antes del traspaso.
+- [ ] El supplier affidavit ya vive en `public/forms/`. Faltan los 40 supplier waivers de `src/data/waiver-templates.ts`, que siguen en el Google Drive personal: pasarlos a `public/forms/waivers/<estado>/` cuando el usuario los descargue.

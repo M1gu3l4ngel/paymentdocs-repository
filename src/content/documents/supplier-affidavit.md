@@ -17,7 +17,7 @@ example:
   alt: Sample supplier affidavit with the company, project, supplier list and signature fields.
 downloads:
   - label: Supplier affidavit template
-    href: https://drive.google.com/file/d/1JCntHOIKKdF4CylH28natAyqYvy_qlEJ/view?usp=sharing
+    href: forms/supplier-affidavit.pdf
 ---
 
 A supplier affidavit, also called a contractor affidavit, lists the vendors or subcontractors who
