@@ -548,7 +548,7 @@ h2 {
 }
 
 @media (min-width: 960px) {
-	.doc-layout {
+	.doc-layout--with-aside {
 		grid-template-columns: minmax(0, 1fr) 320px;
 		align-items: start;
 	}
@@ -662,10 +662,21 @@ h2 {
 	width: 100%;
 }
 
+.example figure {
+	max-width: 720px;
+	margin: 0;
+	padding: 16px;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	background: var(--color-surface);
+}
+
 .example img {
+	width: 100%;
 	border: 1px solid var(--color-border);
 	border-radius: var(--radius-sm);
 	background: #ffffff;
+	cursor: zoom-in;
 }
 
 .example figcaption {

@@ -53,7 +53,7 @@ const { Content } = await render(document);
 		</div>
 	</header>
 
-	<div class="container doc-layout">
+	<div class:list={["container doc-layout", { "doc-layout--with-aside": downloads.length > 0 }]}>
 		<article class="doc-content prose">
 			<Content />
 
@@ -78,39 +78,41 @@ const { Content } = await render(document);
 				</aside>
 			)}
 
-			{document.data.hasWaiverTemplates && <WaiverTemplates />}
-		</article>
-
-		{(example || downloads.length > 0) && (
-			<aside class="doc-aside">
-				{downloads.length > 0 && (
-					<section class="panel" aria-labelledby="downloads">
-						<h2 id="downloads">Downloads</h2>
-						<ul class="download-list">
-							{downloads.map((download) => (
-								<li>
-									<a class="button" href={download.href} target="_blank" rel="noopener">
-										<Icon name="download" size={18} />
-										{download.label}
-									</a>
-								</li>
-							))}
-						</ul>
-					</section>
-				)}
-				{example && (
-					<figure class="panel example">
+			{example && (
+				<section class="example" aria-labelledby="sample">
+					<h2 id="sample">Sample {shortName}</h2>
+					<figure>
 						<a href={example.src.src} target="_blank" rel="noopener">
 							<Image
 								src={example.src}
 								alt={example.alt}
-								widths={[360, 720]}
-								sizes="(min-width: 960px) 320px, 100vw"
+								widths={[480, 720, 1080, 1440]}
+								sizes="(min-width: 760px) 720px, 100vw"
 							/>
 						</a>
-						<figcaption>Sample {shortName}. Select it to open it full size.</figcaption>
+						<figcaption>Select the image to open it full size.</figcaption>
 					</figure>
-				)}
+				</section>
+			)}
+
+			{document.data.hasWaiverTemplates && <WaiverTemplates />}
+		</article>
+
+		{downloads.length > 0 && (
+			<aside class="doc-aside">
+				<section class="panel" aria-labelledby="downloads">
+					<h2 id="downloads">Downloads</h2>
+					<ul class="download-list">
+						{downloads.map((download) => (
+							<li>
+								<a class="button" href={download.href} target="_blank" rel="noopener">
+									<Icon name="download" size={18} />
+									{download.label}
+								</a>
+							</li>
+						))}
+					</ul>
+				</section>
 			</aside>
 		)}
 	</div>
