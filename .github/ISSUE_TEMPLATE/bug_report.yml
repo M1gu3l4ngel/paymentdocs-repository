@@ -1,0 +1,41 @@
+name: Bug report
+description: Something on the site is wrong, broken or out of date.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: A vulnerability goes through SECURITY.md, never in a public issue.
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The URL of the page with the problem.
+      placeholder: https://m1gu3l4ngel.github.io/stout-documents-portal/documents/w-9/
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the page
+        2. Select ...
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options: [Desktop, Phone, Tablet]
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: The browser and its version, for example Chrome 140 or Safari 19.
