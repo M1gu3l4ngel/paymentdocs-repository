@@ -143,12 +143,13 @@ Pages; the site updates a minute or two after the run ends.
 
 ## Troubleshooting
 
-| Symptom                                         | Cause                                                 | Fix                                                             |
-| ----------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------- |
-| `localhost:4321` shows a 404 page               | The site lives under the repository path              | Open `http://localhost:4321/stout-documents-portal/`            |
-| `pnpm install` fails with `MINIMUM_RELEASE_AGE` | A dependency was published less than two weeks ago    | Pin the previous version in `package.json`, then `pnpm install` |
-| `pnpm check` fails on a document                | A front matter field is missing or has the wrong type | Fix the field the error names, in the file it names             |
-| The site did not update after a merge           | The CI run failed, so nothing was deployed            | Open the run in the Actions tab and fix the failing step        |
+| Symptom                                                 | Cause                                                 | Fix                                                             |
+| ------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------- |
+| `localhost:4321` shows a 404 page                       | The site lives under the repository path              | Open `http://localhost:4321/stout-documents-portal/`            |
+| `pnpm install` fails with `MINIMUM_RELEASE_AGE`         | A dependency was published less than two weeks ago    | Pin the previous version in `package.json`, then `pnpm install` |
+| `pnpm check` fails on a document                        | A front matter field is missing or has the wrong type | Fix the field the error names, in the file it names             |
+| The site did not update after a merge                   | The CI run failed, so nothing was deployed            | Open the run in the Actions tab and fix the failing step        |
+| `pnpm dev` shows `ENOENT ... astro\assets\endpoint\dev` | `node_modules` was reinstalled while the server ran   | Stop the server with `Ctrl+C` and run `pnpm dev` again          |
 
 ## Contributing
 
