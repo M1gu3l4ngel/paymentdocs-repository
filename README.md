@@ -35,8 +35,8 @@
 
 Subcontractors and suppliers send Stout a set of documents before they get paid: tax forms,
 insurance certificates, affidavits and lien waivers. This site explains each one in plain
-language, shows a sample with the fields that matter, and links the templates to download. It is
-live at <https://m1gu3l4ngel.github.io/paymentdocs-repository/>.
+language, shows a sample with the fields that matter, and links the templates to download. The
+live site is the website link in the About section of this repository.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/preview-dark.png">
