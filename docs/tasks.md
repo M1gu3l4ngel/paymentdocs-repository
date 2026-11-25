@@ -45,7 +45,6 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 **Plataforma:** Repositorio
 **Requiere:** «Renombrar a paymentdocs-repository»
 
-- [ ] Descargar de Drive la carpeta de supplier waivers por estado y pasar la ruta a Claude.
 - [ ] Verificar el sitio completo y aprobarlo.
 - [ ] Llevar los commits de `redesign` a `main` (fast-forward) y borrar `redesign`.
 - [ ] Cambiar la fuente de Pages a «GitHub Actions» (Settings → Pages → Source) antes del push.

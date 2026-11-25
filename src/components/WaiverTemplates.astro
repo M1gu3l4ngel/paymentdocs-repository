@@ -1,5 +1,6 @@
 ---
-import { WAIVER_TEMPLATES, WAIVER_TYPES } from "../data/waiver-templates";
+import { WAIVER_STATES, WAIVER_TYPES, waiverTemplatePath } from "../data/waiver-templates";
+import { withBase } from "../lib/paths";
 import Icon from "./Icon.astro";
 ---
 
@@ -17,18 +18,18 @@ import Icon from "./Icon.astro";
 				</tr>
 			</thead>
 			<tbody>
-				{WAIVER_TEMPLATES.map(({ state, templates }) => (
+				{WAIVER_STATES.map((state) => (
 					<tr>
-						<th scope="row">{state}</th>
+						<th scope="row">{state.name}</th>
 						{WAIVER_TYPES.map((type) => (
 							<td data-label={type.label}>
-								<a href={templates[type.key]} target="_blank" rel="noopener">
+								<a href={withBase(waiverTemplatePath(state.slug, type))} download>
 									<Icon name="download" size={16} />
 									<span>
-										Download
+										PDF
 										<span class="visually-hidden">
 											{" "}
-											{state} {type.label.toLowerCase()} waiver
+											{state.name} {type.label.toLowerCase()} waiver
 										</span>
 									</span>
 								</a>

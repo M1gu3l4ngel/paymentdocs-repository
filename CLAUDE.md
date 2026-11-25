@@ -27,13 +27,13 @@ en GitHub.
 
 ## Estructura
 
-| Ruta                              | Qué                                                                   |
-| --------------------------------- | --------------------------------------------------------------------- |
-| `src/content/documents/`          | Un Markdown por documento; el esquema está en `src/content.config.ts` |
-| `src/data/waiver-templates.ts`    | Plantillas de supplier waiver por estado (enlaces de Google Drive)    |
-| `src/pages/`                      | Home, página de cada documento (`documents/[id].astro`) y 404         |
-| `src/components/`, `src/layouts/` | Layout único, header, footer e iconos SVG en línea                    |
-| `public/pages/`                   | Redirecciones de las URLs del sitio viejo (`pages/w9.html`…)          |
+| Ruta                              | Qué                                                                         |
+| --------------------------------- | --------------------------------------------------------------------------- |
+| `src/content/documents/`          | Un Markdown por documento; el esquema está en `src/content.config.ts`       |
+| `src/data/waiver-templates.ts`    | Estados con plantillas de supplier waiver; los PDF están en `public/forms/` |
+| `src/pages/`                      | Home, página de cada documento (`documents/[id].astro`) y 404               |
+| `src/components/`, `src/layouts/` | Layout único, header, footer e iconos SVG en línea                          |
+| `public/pages/`                   | Redirecciones de las URLs del sitio viejo (`pages/w9.html`…)                |
 
 ## Comandos
 

@@ -59,17 +59,18 @@ live at <https://m1gu3l4ngel.github.io/stout-documents-portal/>.
 
 ## Structure
 
-| Folder                   | Contents                                                                 |
-| ------------------------ | ------------------------------------------------------------------------ |
-| `src/content/documents/` | One Markdown file per document; the schema is in `src/content.config.ts` |
-| `src/data/`              | Supplier waiver templates per state                                      |
-| `src/pages/`             | Home page, document page template and 404 page                           |
-| `src/components/`        | Header, footer, cards, theme toggle, icons and the waiver table          |
-| `src/layouts/`           | The single page layout                                                   |
-| `src/styles/`            | Global CSS with the light and dark color tokens                          |
-| `src/assets/`            | Stout logos and sample images, optimized at build time                   |
-| `public/`                | Favicon and redirects from the previous site's URLs                      |
-| `scripts/`               | Internal link checker for the built site                                 |
+| Folder                   | Contents                                                                  |
+| ------------------------ | ------------------------------------------------------------------------- |
+| `src/content/documents/` | One Markdown file per document; the schema is in `src/content.config.ts`  |
+| `src/data/`              | Supplier waiver templates per state                                       |
+| `src/pages/`             | Home page, document page template and 404 page                            |
+| `src/components/`        | Header, footer, cards, theme toggle, icons and the waiver table           |
+| `src/layouts/`           | The single page layout                                                    |
+| `src/styles/`            | Global CSS with the light and dark color tokens                           |
+| `src/assets/`            | Stout logos and sample images, optimized at build time                    |
+| `public/forms/`          | Supplier affidavit and supplier waiver templates, in PDF                  |
+| `public/`                | Favicon, social preview image and redirects from the previous site's URLs |
+| `scripts/`               | Internal link checker for the built site                                  |
 
 ## How it works
 
@@ -133,8 +134,11 @@ match the schema.
 
 ### Add or change a waiver template
 
-Edit `src/data/waiver-templates.ts`. Each state lists its four templates (conditional or
-unconditional, progress or final) by their Google Drive file ID.
+The templates are PDFs in `public/forms/waivers/<state>/`, one per variant:
+`conditional-progress.pdf`, `unconditional-progress.pdf`, `conditional-final.pdf` and
+`unconditional-final.pdf`. To change one, replace its file with the same name. To add a state,
+add its folder with the four files and its entry in `WAIVER_STATES` of
+`src/data/waiver-templates.ts`; `pnpm check:links` fails if a file is missing.
 
 ### Publish a change
 

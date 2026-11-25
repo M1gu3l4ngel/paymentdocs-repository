@@ -20,6 +20,8 @@ Notable changes to the project. The format follows
 
 - Rebuilt the site from scratch with a modern layout that works on phones.
 - Form W-9 now links the official IRS form instead of a copy.
+- The supplier affidavit and supplier waiver templates download straight from the site, as PDF,
+  instead of opening Google Drive.
 - The previous URLs (`pages/w9.html` and the rest) redirect to their new pages.
 - Pages load faster: optimized images and no third-party scripts or fonts.
 
@@ -30,6 +32,7 @@ Notable changes to the project. The format follows
 ### Fixed
 
 - The breadcrumb of the W-9 page pointed to General Liability.
+- The Oregon final waivers downloaded the Oklahoma templates.
 
 ## 1.0.0 - 2023-01-26
 
