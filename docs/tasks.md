@@ -45,8 +45,10 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 **Plataforma:** Repositorio
 **Requiere:** «Renombrar a paymentdocs-repository»
 
-- [ ] Cambiar la fuente de Pages a «GitHub Actions» (Settings → Pages → Source) justo antes de fusionar.
-- [ ] Aprobar y fusionar `redesign` en `main` con un PR.
+- [ ] Verificar el sitio completo y aprobarlo.
+- [ ] Llevar los commits de `redesign` a `main` (fast-forward) y borrar `redesign`.
+- [ ] Cambiar la fuente de Pages a «GitHub Actions» (Settings → Pages → Source) antes del push.
+- [ ] Push de `main`.
 - [ ] Renombrar el repo en GitHub (Settings → General → Repository name) y la carpeta local.
 - [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer.
 - [ ] Confirmar con Stout los enlaces de Google Drive: hoy viven en una cuenta personal.
