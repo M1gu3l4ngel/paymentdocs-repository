@@ -20,7 +20,7 @@ anyone who represents it elsewhere.
 
 ## Report a problem
 
-Write to `documents@stoutllc.com` with the subject `Code of conduct: stout-documents-portal`.
+Write to `documents@stoutllc.com` with the subject `Code of conduct: paymentdocs-repository`.
 Every report is reviewed and answered, and the identity of whoever reports is kept private.
 
 ## Consequences

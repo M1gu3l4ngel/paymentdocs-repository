@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/M1gu3l4ngel/stout-documents-portal/actions/workflows/ci.yml"><img src="https://github.com/M1gu3l4ngel/stout-documents-portal/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/M1gu3l4ngel/paymentdocs-repository/actions/workflows/ci.yml"><img src="https://github.com/M1gu3l4ngel/paymentdocs-repository/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/Astro-7-BC52EE?logo=astro&logoColor=white" alt="Astro 7">
   <img src="https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white" alt="TypeScript strict">
   <img src="https://img.shields.io/badge/Node.js-24-5FA04E?logo=nodedotjs&logoColor=white" alt="Node.js 24">
@@ -36,7 +36,7 @@
 Subcontractors and suppliers send Stout a set of documents before they get paid: tax forms,
 insurance certificates, affidavits and lien waivers. This site explains each one in plain
 language, shows a sample with the fields that matter, and links the templates to download. It is
-live at <https://m1gu3l4ngel.github.io/stout-documents-portal/>.
+live at <https://m1gu3l4ngel.github.io/paymentdocs-repository/>.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/preview-dark.png">
@@ -54,8 +54,8 @@ live at <https://m1gu3l4ngel.github.io/stout-documents-portal/>.
   waiver templates for each state.
 - **Filter:** find a document by name or abbreviation from the home page.
 - **Light and dark themes:** follows the system, and remembers the visitor's choice.
-- **Old links keep working:** the URLs of the previous site (`pages/w9.html` and the rest)
-  redirect to their new pages.
+- **Old page paths keep working:** the page paths of the previous site (`pages/w9.html` and the
+  rest) redirect to their new pages.
 
 ## Structure
 
@@ -103,13 +103,13 @@ flowchart LR
 From the folder where you keep your projects, as a normal user:
 
 ```bash
-git clone https://github.com/M1gu3l4ngel/stout-documents-portal.git
-cd stout-documents-portal
+git clone https://github.com/M1gu3l4ngel/paymentdocs-repository.git
+cd paymentdocs-repository
 pnpm install
 pnpm dev
 ```
 
-Check that it worked: open <http://localhost:4321/stout-documents-portal/> and the home page
+Check that it worked: open <http://localhost:4321/paymentdocs-repository/> and the home page
 shows the six documents.
 
 ## Usage
@@ -149,7 +149,7 @@ Pages; the site updates a minute or two after the run ends.
 
 | Symptom                                                 | Cause                                                 | Fix                                                             |
 | ------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------- |
-| `localhost:4321` shows a 404 page                       | The site lives under the repository path              | Open `http://localhost:4321/stout-documents-portal/`            |
+| `localhost:4321` shows a 404 page                       | The site lives under the repository path              | Open `http://localhost:4321/paymentdocs-repository/`            |
 | `pnpm install` fails with `MINIMUM_RELEASE_AGE`         | A dependency was published less than two weeks ago    | Pin the previous version in `package.json`, then `pnpm install` |
 | `pnpm check` fails on a document                        | A front matter field is missing or has the wrong type | Fix the field the error names, in the file it names             |
 | The site did not update after a merge                   | The CI run failed, so nothing was deployed            | Open the run in the Actions tab and fix the failing step        |

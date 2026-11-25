@@ -10,7 +10,7 @@ body:
     attributes:
       label: Page
       description: The URL of the page with the problem.
-      placeholder: https://m1gu3l4ngel.github.io/stout-documents-portal/documents/w-9/
+      placeholder: https://m1gu3l4ngel.github.io/paymentdocs-repository/documents/w-9/
     validations:
       required: true
   - type: textarea

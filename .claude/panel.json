@@ -1,5 +1,5 @@
 {
-	"project": "stout-documents-portal",
+	"project": "paymentdocs-repository",
 	"platforms": { "web": "Sitio web", "repo": "Repositorio" },
 	"devices": { "mobile": "Móvil", "desktop": "Escritorio" }
 }

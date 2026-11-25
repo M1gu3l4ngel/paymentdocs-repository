@@ -5,6 +5,6 @@ import { defineConfig } from "astro/config";
 // only `site` changes: the path stays the repository name.
 export default defineConfig({
 	site: "https://m1gu3l4ngel.github.io",
-	base: "/stout-documents-portal",
+	base: "/paymentdocs-repository",
 	trailingSlash: "always",
 });

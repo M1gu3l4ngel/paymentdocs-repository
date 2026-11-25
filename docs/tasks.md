@@ -1,18 +1,18 @@
-# Tareas pendientes — stout-documents-portal
+# Tareas pendientes — paymentdocs-repository
 
 Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el README de `~/.claude/panel/`.
 
 # Fase 3 — Cierre
 
-## Renombrar a paymentdocs-repository
+## Publicar con el nombre nuevo
 
 **Plataforma:** Repositorio
-**Prioridad:** P1
+**Prioridad:** P0
 **Requiere:** nada
 **Estado:** en curso
 
-- [ ] Cambiar `base` de Astro, `CLAUDE.md`, README y la web del repo a `/paymentdocs-repository/`.
-- [ ] Redirección desde la URL vieja de Pages (GitHub no la redirige al renombrar).
+- [ ] Renombrar el repo en GitHub a `paymentdocs-repository` y actualizar el remoto local, antes del push (el `base` nuevo no coincide con la URL vieja).
+- [ ] Push de `main` cuando el usuario lo pida, y comprobar el run de CI y el deploy.
 
 # Por probar
 
@@ -25,9 +25,9 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 - [ ] Botón «Copy» del correo: copia `documents@stoutllc.com`.
 - [ ] Tema claro y oscuro: el botón cambia el tema y el logo, y la elección se recuerda al recargar.
 - [ ] Página de cada documento: imagen de ejemplo grande y legible; clic la abre a tamaño completo.
-- [ ] Supplier Waiver: la tabla por estado descarga el archivo correcto.
+- [ ] Supplier Waiver: la tabla por estado descarga el PDF correcto.
 - [ ] [Móvil] Supplier Waiver: la tabla se convierte en tarjetas por estado.
-- [ ] URLs viejas: `/stout-documents-portal/pages/w9.html` redirige a la página nueva del W-9.
+- [ ] Rutas viejas: `/paymentdocs-repository/pages/w9.html` redirige a la página nueva del W-9.
 - [ ] Logo del header: se lee «Stout Building Contractors» en claro y «Stout» en oscuro.
 
 ## Repositorio en GitHub
@@ -38,18 +38,17 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 - [ ] Descripción y topics nuevos en la página del repo.
 - [ ] Tras el deploy: compartir el enlace por WhatsApp o correo muestra la imagen azul de Stout.
 
-# Lo hace el dueño — aprobación, renombre y traspaso
+# Lo hace el dueño — rama, Pages, traspaso y Drive
 
-## Fusionar, renombrar y traspasar
+## Pasar a main y publicar
 
 **Plataforma:** Repositorio
-**Requiere:** «Renombrar a paymentdocs-repository»
+**Requiere:** nada
 
-- [ ] Verificar el sitio completo y aprobarlo.
 - [ ] Llevar los commits de `redesign` a `main` (fast-forward) y borrar `redesign`.
 - [ ] Cambiar la fuente de Pages a «GitHub Actions» (Settings → Pages → Source) antes del push.
-- [ ] Push de `main`.
-- [ ] Renombrar el repo en GitHub (Settings → General → Repository name) y la carpeta local.
-- [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer.
-- [ ] Borrar los documentos del Google Drive personal, solo cuando el sitio nuevo esté desplegado y sin enlaces a Drive.
+- [ ] Renombrar la carpeta local a `paymentdocs-repository`, con la sesión de Claude cerrada.
+- [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer; después, cambiar `site` en `astro.config.mjs` y las URLs del README.
+- [ ] Decidir si la URL vieja (`…/stout-documents-portal/`) necesita un repo pequeño de redirección hacia la URL final.
+- [ ] Borrar los documentos del Google Drive personal cuando el sitio nuevo esté desplegado.
 - [ ] Borrar la foto de cheques reales (`Ejemplo - Cheque Stout.jpeg`) de Drive y de `exported-documents`: muestra cuenta bancaria y firmas.

@@ -1,11 +1,12 @@
-# stout-documents-portal
+# paymentdocs-repository
 
 Portal público de documentación para subcontratistas y proveedores de Stout Building
 Contractors: qué documentos pide Stout para pagar (W-9, General Liability, Workers
 Compensation, Supplier Affidavit, Supplier Waiver, Unconditional Lien Waiver), cómo se
 llenan y a dónde se envían. Se publica en GitHub Pages:
-<https://m1gu3l4ngel.github.io/stout-documents-portal/>. Va a pasar a la organización de Stout
-en GitHub.
+<https://m1gu3l4ngel.github.io/paymentdocs-repository/>. Antes se llamaba
+`stout-documents-portal`. Va a pasar a la organización de Stout en GitHub; al traspasarlo cambia
+`site` en `astro.config.mjs` y las URLs del README, no `base`.
 
 ## Excepciones a las reglas globales
 
@@ -19,7 +20,7 @@ en GitHub.
 
 | Pieza      | Qué                                                                                         |
 | ---------- | ------------------------------------------------------------------------------------------- |
-| Sitio      | Astro 7, estático, con `base: "/stout-documents-portal"` para GitHub Pages                  |
+| Sitio      | Astro 7, estático, con `base: "/paymentdocs-repository"` para GitHub Pages                  |
 | Lenguaje   | TypeScript estricto (`astro/tsconfigs/strictest`); TS 6 hasta que `@astrojs/check` admita 7 |
 | Estilos    | CSS propio en `src/styles/global.css`, con tokens de color claro y oscuro                   |
 | Paquetes   | pnpm; Node exacto en `engines.node` de `package.json`                                       |
