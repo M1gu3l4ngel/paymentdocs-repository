@@ -1,0 +1,5 @@
+{
+	"project": "stout-documents-portal",
+	"platforms": { "web": "Sitio web", "repo": "Repositorio" },
+	"devices": { "mobile": "Móvil", "desktop": "Escritorio" }
+}
