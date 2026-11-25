@@ -11,7 +11,7 @@ export type WaiverType = (typeof WAIVER_TYPES)[number];
 /**
  * States with supplier waiver templates. Each one has the four variants in
  * public/forms/waivers/<slug>/<type file>.pdf; scripts/check-links.ts fails the build if one is
- * missing. Texas has no templates yet.
+ * missing.
  */
 export const WAIVER_STATES = [
 	{ name: "Arizona", slug: "arizona" },

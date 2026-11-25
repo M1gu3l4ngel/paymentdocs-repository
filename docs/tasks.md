@@ -33,9 +33,6 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 **Plataforma:** Repositorio
 **Requiere:** nada
 
-- [ ] Push de la regla de Dependabot y cerrar el PR #1 (TypeScript 7 y `@types/node` 26) si Dependabot no lo cierra solo.
 - [ ] Renombrar la carpeta local a `paymentdocs-repository`, con la sesión de Claude cerrada.
-- [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer; después, cambiar `site` en `astro.config.mjs` y las URLs del README.
+- [ ] Transferir el repo a la org `stoutllc` desde Settings → Danger Zone → Transfer; después, cambiar `site` en `astro.config.mjs`, el campo Website del repo, la URL de `CLAUDE.md` y los enlaces a `M1gu3l4ngel` del README, del CHANGELOG y de las plantillas de issues.
 - [ ] Decidir si la URL vieja (`…/stout-documents-portal/`) necesita un repo pequeño de redirección hacia la URL final.
-- [ ] Borrar los documentos del Google Drive personal cuando el sitio nuevo esté desplegado.
-- [ ] Borrar la foto de cheques reales (`Ejemplo - Cheque Stout.jpeg`) de Drive y de `exported-documents`: muestra cuenta bancaria y firmas.

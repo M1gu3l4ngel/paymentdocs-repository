@@ -103,7 +103,7 @@ flowchart LR
 From the folder where you keep your projects, as a normal user:
 
 ```bash
-git clone https://github.com/M1gu3l4ngel/paymentdocs-repository.git
+git clone https://github.com/stoutllc/paymentdocs-repository.git
 cd paymentdocs-repository
 pnpm install
 pnpm dev
