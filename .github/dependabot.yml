@@ -14,6 +14,13 @@ updates:
       interval: monthly
     cooldown:
       default-days: 14
+    ignore:
+      # astro check supports TypeScript 6 at most; move with @astrojs/check.
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]
+      # The types follow the Node.js major in engines.node, not the latest one.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
     groups:
       dependencies:
         patterns: ["*"]
