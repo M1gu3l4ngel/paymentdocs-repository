@@ -2,18 +2,6 @@
 
 Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el README de `~/.claude/panel/`.
 
-# Fase 3 — Cierre
-
-## Publicar con el nombre nuevo
-
-**Plataforma:** Repositorio
-**Prioridad:** P0
-**Requiere:** nada
-**Estado:** en curso
-
-- [ ] Renombrar el repo en GitHub a `paymentdocs-repository` y actualizar el remoto local, antes del push (el `base` nuevo no coincide con la URL vieja).
-- [ ] Push de `main` cuando el usuario lo pida, y comprobar el run de CI y el deploy.
-
 # Por probar
 
 ## Sitio nuevo en local
@@ -40,13 +28,12 @@ Solo lo que falta: lo hecho se borra, no se marca. El formato lo describe el REA
 
 # Lo hace el dueño — rama, Pages, traspaso y Drive
 
-## Pasar a main y publicar
+## Carpeta, traspaso y Drive
 
 **Plataforma:** Repositorio
 **Requiere:** nada
 
-- [ ] Llevar los commits de `redesign` a `main` (fast-forward) y borrar `redesign`.
-- [ ] Cambiar la fuente de Pages a «GitHub Actions» (Settings → Pages → Source) antes del push.
+- [ ] Push del commit que actualiza este panel.
 - [ ] Renombrar la carpeta local a `paymentdocs-repository`, con la sesión de Claude cerrada.
 - [ ] Transferir el repo a la org de Stout desde Settings → Danger Zone → Transfer; después, cambiar `site` en `astro.config.mjs` y las URLs del README.
 - [ ] Decidir si la URL vieja (`…/stout-documents-portal/`) necesita un repo pequeño de redirección hacia la URL final.
