@@ -40,4 +40,4 @@ Notable changes to the project. The format follows
 
 - First version of the portal with the six required documents.
 
-[Unreleased]: https://github.com/M1gu3l4ngel/paymentdocs-repository/commits/main
+[Unreleased]: https://github.com/stoutllc/paymentdocs-repository/commits/main

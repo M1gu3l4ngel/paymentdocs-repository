@@ -4,10 +4,11 @@ Portal público de documentación para subcontratistas y proveedores de Stout Bu
 Contractors: qué documentos pide Stout para pagar (W-9, General Liability, Workers
 Compensation, Supplier Affidavit, Supplier Waiver, Unconditional Lien Waiver), cómo se
 llenan y a dónde se envían. Se publica en GitHub Pages:
-<https://m1gu3l4ngel.github.io/paymentdocs-repository/>. Antes se llamaba
-`stout-documents-portal`. Va a pasar a la organización de Stout en GitHub; al traspasarlo cambian
-`site` en `astro.config.mjs` (no `base`), la URL de esta línea y el campo Website del repo. El
-README no escribe la URL del sitio para no quedar desfasado.
+<https://stoutllc.github.io/paymentdocs-repository/>. Vive en la organización `stoutllc` de
+GitHub; antes se llamaba `stout-documents-portal` y estaba en una cuenta personal. Si cambia de
+dueño o de dominio, cambian `site` en `astro.config.mjs` (no `base`), la URL de esta línea, el
+campo Website del repo y los enlaces a `github.com/stoutllc` del README, el CHANGELOG y las
+plantillas de issues. El README no escribe la URL del sitio para no quedar desfasado.
 
 ## Excepciones a las reglas globales
 

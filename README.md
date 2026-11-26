@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/M1gu3l4ngel/paymentdocs-repository/actions/workflows/ci.yml"><img src="https://github.com/M1gu3l4ngel/paymentdocs-repository/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/stoutllc/paymentdocs-repository/actions/workflows/ci.yml"><img src="https://github.com/stoutllc/paymentdocs-repository/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/Astro-7-BC52EE?logo=astro&logoColor=white" alt="Astro 7">
   <img src="https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white" alt="TypeScript strict">
   <img src="https://img.shields.io/badge/Node.js-24-5FA04E?logo=nodedotjs&logoColor=white" alt="Node.js 24">
