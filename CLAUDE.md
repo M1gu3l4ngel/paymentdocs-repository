@@ -56,6 +56,10 @@ Desde la raíz del repo, como usuario normal:
 - Formato: `.prettierrc.json` y `.editorconfig` del repo (tabs, ancho 100).
 - El texto de cada documento vive en un solo sitio; las páginas no repiten header ni footer.
 - Sin datos personales en el sitio: el contacto es el correo de Stout (`documents@stoutllc.com`).
+- Cuenta de trabajo: git y `gh` van con `MiguelAngel-1497`, nunca con la cuenta personal. La
+  identidad y la clave GPG de trabajo están en la config local del repo (igual que
+  `financeadmin-repository`), y el remoto lleva el usuario en la URL. Antes de usar `gh`:
+  `gh auth switch --user MiguelAngel-1497`.
 - Repo de solo `main`: se trabaja y se publica en `main`, sin ramas de trabajo. Cada push a `main`
   pasa el CI y despliega a Pages.
 - Tareas: `docs/tasks.md` y `docs/backlog.md`, con el panel de `~/.claude/panel/`.
